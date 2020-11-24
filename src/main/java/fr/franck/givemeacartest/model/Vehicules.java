@@ -78,11 +78,11 @@ public void setNiveauCarburant(String niveauCarburant) {
 	this.niveauCarburant = niveauCarburant;
 }
 
-public String getDisponibilté() {
+public String getDisponibilte() {
 	return disponibilite;
 }
 
-public void setDisponibilté(String disponibilté) {
+public void setDisponibilte(String disponibilite) {
 	this.disponibilite = disponibilite;
 }  
 
