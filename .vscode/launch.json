@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GivemeacartestApplication<givemeacartest>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "fr.franck.givemeacartest.GivemeacartestApplication",
+            "projectName": "givemeacartest",
+            "args": ""
+        }
+    ]
+}

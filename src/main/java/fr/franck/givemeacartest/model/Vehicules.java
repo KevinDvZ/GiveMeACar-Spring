@@ -1,6 +1,15 @@
 package fr.franck.givemeacartest.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Vehicules {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
    private String modeles;
    private String marques;
    private String typeVehicules;
@@ -9,9 +18,11 @@ public class Vehicules {
    private String prixMinute;
    private String niveauCarburant;
    private String disponibilite;
-
-public Vehicules (String modeles, String marques, String typeVehicules, String immatVehicules,String geolocalisation, String prixMinute,String niveauCarburant,String disponibilite ){
-
+public Vehicules() {
+	// TODO Auto-generated constructor stub
+}
+public Vehicules (int id, String modeles, String marques, String typeVehicules, String immatVehicules,String geolocalisation, String prixMinute,String niveauCarburant,String disponibilite ){
+	this.id = id;
     this.modeles = modeles;
     this.marques = marques;
     this.typeVehicules = typeVehicules;
@@ -22,6 +33,12 @@ public Vehicules (String modeles, String marques, String typeVehicules, String i
     this.disponibilite = disponibilite;   
   }
 
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
 public String getModeles() {
 	return modeles;
 }
@@ -82,7 +99,7 @@ public String getDisponibilté() {
 	return disponibilite;
 }
 
-public void setDisponibilté(String disponibilté) {
+public void setDisponibilté( String disponibilite) {
 	this.disponibilite = disponibilite;
 }  
 
